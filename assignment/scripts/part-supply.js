@@ -91,4 +91,4 @@ while(parts-7>0){
 }
 
 console.log('Total boxes filled is ' + boxes + '.');
-console.log('Numbers of unboxed parts is ' + parts + '.');
+console.log('Number of unboxed parts is ' + parts + '.');
