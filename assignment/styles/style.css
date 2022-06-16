@@ -1,1 +1,8 @@
 /* give your assignment a fun background color */
+html {
+    height: 100%;
+}
+
+body{
+    background-image: linear-gradient(to top right, #d53369, #daae51);
+}
