@@ -42,11 +42,11 @@ console.log('6. Showing supplyChanges...');
 
 for(let i=0; i<supplyChanges.length; i += 1){
     if(supplyChanges[i] > 0){
-        console.log('Added ' + supplyChanges[i] + ' parts.');
+        console.log(`Added ${supplyChanges[i]} parts.`);
     } else if (supplyChanges[i] === 0){
         console.log('No Change');
     } else if (supplyChanges[i] < 0){
-        console.log('Removed ' + supplyChanges[i] + ' parts.');
+        console.log(`Removed ${supplyChanges[i]} parts.`);
     }
 }
 
@@ -57,11 +57,11 @@ console.log('7. Showing supplyChanges with "for of" loop');
 
 for(let itemChange of supplyChanges){
     if(itemChange > 0){
-        console.log('Added ' + itemChange + ' parts.');
+        console.log(`Added ${itemChange} parts.`);
     } else if (itemChange === 0){
         console.log('No Change');
     } else if (itemChange < 0){
-        console.log('Removed ' + itemChange + ' parts.');
+        console.log(`Removed ${itemChange} parts.`);
     }
 }
 
@@ -72,7 +72,7 @@ console.log('8. Total supplies available is:');
 let totalSupplies = 0;
 for(let i=0; i<supplyChanges.length; i += 1){
     totalSupplies += supplyChanges[i];
-    console.log('total supplies are currently:', totalSupplies);
+    console.log(`Current number of parts available: ${totalSupplies}`);
 }
 
 // 9. We have a large stash of parts in our warehouse that we 
@@ -90,5 +90,5 @@ while(parts-7>0){
     boxes += 1;
 }
 
-console.log('Total boxes filled is ' + boxes + '.');
-console.log('Number of unboxed parts is ' + parts + '.');
+console.log(`Total number of boxes filled is: ${boxes}`);
+console.log(`Number of unboxed parts is: ${parts}`);
